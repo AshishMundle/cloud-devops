@@ -78,7 +78,7 @@ Installed and controlled nginx via `systemctl` (status/stop/start), and did a tr
 
 Just an exploratory pass at the Jenkins install flow (adding the keyring and repo source) — didn't take this further into a running setup this session.
 
-## Interview Prep Notes
+## KEY Notes
 
 - **chmod numeric modes:** `777` = full read/write/execute for everyone (avoid in production), `555` = read/execute only, no write — useful for locking down scripts you don't want accidentally modified.
 - **systemctl basics:** `status` to check state, `stop`/`start` to control a service, always verify with `status` after any change.
