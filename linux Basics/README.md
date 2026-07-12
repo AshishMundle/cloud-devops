@@ -84,7 +84,7 @@ flowchart TD
     whoami
     ps -ef
 
-## Interview Prep Notes
+## KEY Notes
 
 - **Kernel vs Shell:** kernel talks to hardware, shell is the user-facing interpreter that passes commands to the kernel.
 - **SSH key pairs:** public key goes on the server / shared with whoever grants access; private key stays local, never shared. Port 22 by default.
