@@ -17,7 +17,7 @@ File system navigation, log inspection, process/service checks, and system resou
 
 ## SSH Connection Flow (GCP)
 
-'''mermaid
+```mermaid
 flowchart TD
     A[Configure VM settings via GCP Console or CLI] --> B[Create/Launch VM instance]
     B --> C[Click SSH in Console or run gcloud compute ssh]
@@ -26,7 +26,7 @@ flowchart TD
     E --> F[Connection request over Port 22]
     F --> G[VM verifies signed request against stored public key]
     G --> H[SSH session established - landed inside the VM]
-'''
+```
 
 ## Hands-on
 
