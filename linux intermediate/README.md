@@ -72,7 +72,7 @@ File creation/editing in `vi`, writing a short shell script, and working through
 
 Ran `shalini.sh` directly and hit a permission-denied error since the script wasn't executable. Checked with `ls -l`, confirmed the execute bit was missing, fixed it with `chmod +x shalini.sh`, and re-ran successfully. Small thing, but a good reminder that a fresh script needs execute permission before it'll run — not just correct content.
 
-## Interview Prep Notes
+## KEY Notes
 
 - **RM vs RM-RF:** `rm` deletes a file; `rm -rf` force-deletes recursively (folders + contents) — no confirmation, no undo, use carefully.
 - **Public key vs private key:** public key shared for access grants, private key never leaves the local machine.
