@@ -1,4 +1,4 @@
-# Phase 01 – Cloud, DevOps & AI Fundamentals
+# Cloud, DevOps & AI Fundamentals
 
 ## Overview
 
