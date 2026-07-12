@@ -19,7 +19,7 @@ File system navigation, log inspection, process/service checks, and system resou
 
 ```mermaid
 flowchart TD
-    A[Configure VM settings via GCP Console or /n CLI] --> B[Create/Launch VM instance]
+    A[Configure VM settings via GCP Console or CLI] --> B[Create/Launch VM instance]
     B --> C[Click SSH in Console or run gcloud compute ssh]
     C --> D[Key pair generated/used - Private key stays local, never sent]
     D --> E[Public key pushed to VM via metadata / authorized_keys]
