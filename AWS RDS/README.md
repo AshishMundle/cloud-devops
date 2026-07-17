@@ -78,7 +78,7 @@ flowchart LR
     style RDSManaged fill:#e2f7e2,stroke:#45a845,color:#000
 ```
 
-## Interview Prep Notes
+## KEY Notes
 
 - **Why databases go in private subnets:** prevents direct internet exposure, reducing risk of SQL injection and unauthorized data access — access is routed through a bastion host or application layer instead.
 - **NAT Gateway vs Internet Gateway:** IGW allows public subnet resources to be reached from the internet; NAT Gateway lets private subnet resources initiate outbound connections (e.g. updates) without allowing inbound access.
