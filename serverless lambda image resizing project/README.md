@@ -43,7 +43,7 @@ flowchart TD
 
 Ran into a `'main' is not recognized` error initially (PATH issue before running from the correct project directory) — resolved by running the commands directly from the project folder in CMD. `terraform init` successfully configured the local backend and installed the AWS provider.
 
-![Terraform init successful output](./screenshots/ss1.png)
+
 
 **Resources provisioned by Terraform:**
 - Two S3 buckets — one source (`non-resized-image-...`) and one destination (`resized-images-...`), each with a globally unique name
