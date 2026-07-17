@@ -57,7 +57,7 @@ flowchart TD
     E --> F[S3 Glacier Flexible Retrieval<br/>Archived - minutes to hours]
 ```
 
-## Interview Prep Notes
+## KEY Notes
 
 - **PEM vs PPK:** PEM is the standard key format used by Linux/OpenSSH tools; PPK is PuTTY's format for Windows-based SSH clients — same underlying key, different container format.
 - **Stop vs Terminate:** stopping preserves the instance and its EBS volume (still billed); terminating deletes the instance and releases resources (EBS may still bill separately unless set to delete on termination).
