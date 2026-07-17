@@ -66,6 +66,7 @@ Connected to the RDS instance from the jump host and ran real queries — create
     SELECT * FROM tutorials_tbl;
 
 ![MySQL table creation on RDS via jump host](./screenshots/ss1.png)
+--------------------------------------------
 ![MySQL query results](./screenshots/ss2.png)
 
 ## RDS Private Connectivity Flow
@@ -104,7 +105,7 @@ flowchart LR
 - **Read replicas** — offload read traffic from the primary instance; one-directional sync (master → replica), ~3 second acceptable lag
 - **IAM authentication flow** — install AWS CLI, run `aws configure`, generate a DB auth token via `aws rds generate-db-auth-token` as an alternative to password login
 
-## Interview Prep Notes
+## KEY Notes
 
 - **Why a jump host is mandatory:** the RDS instance has no public access — the only path in is through the EC2 jump host sitting in the public subnet, exposed only on the specific port needed (3306 for MySQL).
 - **MySQL client vs full MySQL install:** the client only provides connectivity to a remote database; it doesn't run a local database server — the actual DB lives entirely on RDS.
