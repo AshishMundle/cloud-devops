@@ -66,7 +66,7 @@ flowchart TD
     LB --> GWLB[Gateway Load Balancer<br/>Used with firewalls/<br/>security appliances]
 ```
 
-![Load balancer created successfully](./screenshots/AWS intro.jpg)
+![Load balancer created successfully](./screenshots/AWSintro.jpg)
 
 ## Interview Prep Notes
 
