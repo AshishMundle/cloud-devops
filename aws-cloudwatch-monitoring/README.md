@@ -43,7 +43,7 @@ Centralized dashboards aggregating multiple instances with color-coded different
 - Created a new SNS topic for the budget alarm, added an email subscriber, confirmed the subscription
 - Reviewed the AWS billing breakdown (Billing → Bills) to see service-by-service, region-by-region cost drivers
 
-![CloudWatch monitoring dashboard](./screenshots/PLACEHOLDER-monitoring.png)
+![CloudWatch monitoring dashboard](./screenshots/SS.png)
 
 ## CloudWatch Alert Flow
 
