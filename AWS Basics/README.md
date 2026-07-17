@@ -68,7 +68,7 @@ flowchart TD
 
 ![Load balancer created successfully](./screenshots/AWSintro.jpg)
 
-## Interview Prep Notes
+## KEY Notes
 
 - **Load Balancer types:** ALB (Layer 7, HTTP/HTTPS routing), NLB (Layer 4, high-performance TCP/UDP), CLB (legacy, still in use in some setups), GWLB (used with firewalls/security appliances).
 - **Stopped vs Terminated EC2:** stopping still incurs charges (resources reserved); terminating releases resources and stops billing.
