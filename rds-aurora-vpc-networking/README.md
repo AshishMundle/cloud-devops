@@ -12,7 +12,7 @@ The three RDS architecture patterns (Single Instance, Multi-AZ, Aurora Cluster),
 **VPC & networking fundamentals**
 VPC/subnet structure, Internet Gateway vs NAT Gateway roles, route tables, CIDR sizing, and a broader networking refresher — OSI model layers, IPv4 vs IPv6, and network types (LAN/WAN, unicast/multicast/broadcast).
 
-## Diagram 1 — RDS Deployment Architectures
+## RDS Deployment Architectures
 
 ```mermaid
 flowchart TD
@@ -25,7 +25,7 @@ flowchart TD
     style C fill:#e2f7e2,stroke:#45a845,color:#000
 ```
 
-## Diagram 2 — VPC Traffic Flow (Public ↔ Private Subnet)
+## VPC Traffic Flow (Public ↔ Private Subnet)
 
 ```mermaid
 flowchart LR
@@ -53,7 +53,7 @@ Provisioned requires manually configuring CPU/memory ahead of time; Serverless s
 **Networking basics covered**
 CIDR /16 sizing (65,536 internal IPs, standard for enterprise VPCs), OSI model layers, IPv4 (32-bit) vs IPv6 (128-bit, not yet common in enterprise VPC setups), and core network types (LAN, WAN, intranet vs internet, TCP/UDP, unicast/multicast/broadcast).
 
-## Interview Prep Notes
+## KEY Notes
 
 - **How does an app route queries to read vs write endpoints?** Decided at design time, not runtime — read-only functions are hardcoded to the replica endpoint, write functions to the primary endpoint.
 - **What happens if the primary fails and a replica gets promoted?** The endpoint abstraction (DNS-level) handles this transparently — the application keeps using the same endpoint reference; traffic redirects without the app needing to change anything.
