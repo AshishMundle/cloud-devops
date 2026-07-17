@@ -4,7 +4,7 @@
 
 Hosted a static website directly on AWS S3 — covering the full manual workflow of enabling static hosting, managing bucket permissions, and making objects publicly accessible. Also reviewed how this same setup can be automated end-to-end using Terraform with CloudFront in front of it, though the automated version was instructor-demonstrated rather than something I ran myself this round.
 
-> **Disclaimer:** The site content itself (name, bio, experience stats, contact details) comes from an unedited third-party portfolio template used only to demonstrate the S3 hosting workflow. It does not represent my actual experience, credentials, or contact information.
+> **Disclaimer:** The site content itself (experience stats, contact details) comes from an unedited third-party portfolio template used only to demonstrate the S3 hosting workflow. It does not represent my actual experience, credentials, or contact information.
 
 ## Topics Covered
 
@@ -58,7 +58,7 @@ The instructor demonstrated how this entire setup can be automated instead of cl
 
 ![Static website hosted on S3](./screenshots/static-website.png)
 
-## Interview Prep Notes
+## KEY Notes
 
 - **Why buckets must be public + ACL-enabled for static hosting:** by default S3 objects are private; static website hosting requires explicitly unblocking public access at the bucket level and marking each object public via ACL.
 - **Why re-uploaded files need public ACL again:** newly uploaded objects are private by default regardless of the bucket's existing public settings — permission has to be reapplied per object.
