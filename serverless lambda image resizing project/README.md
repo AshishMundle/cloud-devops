@@ -43,7 +43,7 @@ flowchart TD
 
 Ran into a `'main' is not recognized` error initially (PATH issue before running from the correct project directory) — resolved by running the commands directly from the project folder in CMD. `terraform init` successfully configured the local backend and installed the AWS provider.
 
-![Terraform init successful output](./screenshots/ss1.png)
+![Terraform init successful output](./screenshots/ss(1).png)
 
 **Resources provisioned by Terraform:**
 - Two S3 buckets — one source (`non-resized-image-...`) and one destination (`resized-images-...`), each with a globally unique name
@@ -56,7 +56,7 @@ Ran into a `'main' is not recognized` error initially (PATH issue before running
 
 Created and confirmed the SNS email subscription — required before any notifications actually get delivered.
 
-![SNS subscription confirmed](./screenshots/ss2.png)
+![SNS subscription confirmed](./screenshots/ss(2).png)
 
 ## Hands-on — End-to-End Test
 
@@ -65,9 +65,9 @@ Uploaded a real image to the source bucket and confirmed the full pipeline worke
 - **Source bucket:** original image at 7.7 MB
 - **Destination bucket:** resized image at 1.8 MB (Lambda triggered automatically on upload, processed the image with Pillow, and wrote the result to the destination bucket)
 
-![Source and destination bucket comparison showing resize](./screenshots/ss3.png)
+![Source and destination bucket comparison showing resize](./screenshots/ss(3).png)
 
-## Interview Prep Notes
+## KEY Notes
 
 - **Why Lambda over EC2 here:** the workload is event-driven and infrequent (image uploads), not continuous — Lambda avoids paying for idle compute and scales automatically without any manual configuration.
 - **Stateless vs stateful:** Lambda is stateless — each invocation is independent with no memory of prior calls, unlike a long-running EC2 process that maintains state across requests.
