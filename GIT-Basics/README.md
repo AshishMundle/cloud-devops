@@ -47,7 +47,7 @@ flowchart LR
 
 *Files move through four stages: edited in the working directory, staged with `git add`, committed to the local `.git` history, and pushed to the remote GitHub repo — each step is a deliberate checkpoint, not automatic.*
 
-## Interview Prep Notes
+## KEY Notes
 
 - **`git revert` vs going back to an old version:** `git revert <commit-id>` creates a new commit that undoes the changes from a specific commit, rather than deleting history — safer for shared/production branches.
 - **What's in the `.git` folder:** all of Git's tracking data and config for that repository — commit history, branches, remotes — hidden from normal file browsing.
